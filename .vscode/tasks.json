@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and Run C++",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "g++ -std=c++11 -O2 -Wall \"${file}\" -o \"${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe\" && \"${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe\" < \"${workspaceFolder}\\data\\input.txt\" > \"${workspaceFolder}\\data\\output.txt\""
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile and run C++ code with I/O redirection."
+        }
+    ]
+}
