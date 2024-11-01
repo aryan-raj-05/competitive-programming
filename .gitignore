@@ -1,6 +1,9 @@
 # Ignore bin directory
 bin/
 
+# Ignore data directory
+data/
+
 # Ignore build output
 obj/
 
