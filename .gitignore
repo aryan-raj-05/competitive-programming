@@ -1,0 +1,13 @@
+# Ignore bin directory
+bin/
+
+# Ignore build output
+obj/
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
