@@ -1,9 +1,15 @@
 #include <bits/stdc++.h>
+#include <cstdio>
 
 using namespace std;
 typedef long long ll;
 
 int main() {
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+    
     ll n;
     cin >> n;
     while (1) {
