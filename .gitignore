@@ -1,16 +1,35 @@
-# Ignore bin directory
-bin/
+# Prerequisites
+*.d
 
-# Ignore data directory
-data/
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# Ignore build output
-obj/
+# Precompiled Headers
+*.gch
+*.pch
 
-# Ignore temporary files
-*.tmp
-*.log
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# Ignore system files
-.DS_Store
-Thumbs.db
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# All text files used for testing
+*.txt
