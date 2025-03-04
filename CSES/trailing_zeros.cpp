@@ -45,11 +45,6 @@ ll cal_trail_zeros(ll n) {
 }
 
 int main() {
-    #ifndef ONLINE_JUDGE
-    freopen("../input.txt", "r", stdin);
-    freopen("../output.txt", "w", stdout);
-    #endif
-
     ll n;
     cin >> n;
     cout << cal_trail_zeros(n) << "\n";
