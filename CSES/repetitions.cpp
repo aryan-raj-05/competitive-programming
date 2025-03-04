@@ -9,9 +9,6 @@ This is a maximum-length substring containing only one type of character.
 */
 
 int main() {
-    // freopen("../input.txt", "r", stdin);
-    // freopen("../output.txt", "w", stdout);
-
     int global_count = 1;
     int local = 1;
     char prev, nxt;

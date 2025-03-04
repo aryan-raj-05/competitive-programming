@@ -17,11 +17,6 @@ ll exp(ll base, ll exp) {
 }
 
 int main() {
-    #ifndef ONLINE_JUDGE
-    freopen("../input.txt", "r", stdin);
-    freopen("../output.txt", "w", stdout);
-    #endif
-
     int n;
     cin >> n;
     cout << exp(2, n) << "\n";

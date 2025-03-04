@@ -7,11 +7,6 @@ typedef long long ll;
 // divide the numbers 1,2, ...,n into two sets of equal sum.
 
 int main() {
-    #ifndef ONLINE_JUDGE
-    freopen("../input.txt", "r", stdin);
-    freopen("../output.txt", "w", stdout);
-    #endif
-
     int n;
     cin >> n;
 
