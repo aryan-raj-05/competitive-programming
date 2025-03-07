@@ -1,0 +1,39 @@
+{
+    "cmd": 
+    [
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",     // may become bit annoying
+        "-O2",
+        "-Wshadow",
+        "-Wformat=2",
+        "-Wfloat-equal", // can become annoying if working with floats
+        "-Wconversion",  // might generate lots of warnings for implicit conversions
+        "-Wlogical-op",
+        "-Wshift-overflow=2",
+        "-Wduplicated-cond",
+        "-Wcast-qual",
+        "-Wcast-align",
+        "-D_FORTIFY_SOURCE=2",
+        "-fstack-protector",
+        "$file",
+        "-o",
+        "a.exe",
+        "&&",
+        "a.exe",
+        "<",
+        "D:\\Coding\\Competitive-Programming\\data\\input.txt",
+        ">",
+        "D:\\Coding\\Competitive-Programming\\data\\output.txt"
+    ],
+    "shell": true,
+    "file_regex": "^(.*):([0-9]+):([0-9]+): error: (.*)$",
+    "working_dir": "$file_path",
+    "selector": "source.c++",
+
+    // Note : don't change from C++17
+    // that's the standard with which I've precompiled
+    // the bits/stdc++.h file
+}
