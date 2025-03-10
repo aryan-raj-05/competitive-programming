@@ -12,11 +12,6 @@ using vi = vector<int>;
 #define range(i, a, b)  for (int i = a; i < (b); ++i)
 #define rep(i, n)       range(i, 0, n)
 
-#define pb push_back
-#define f first
-#define s second
-#define mp make_pair
-
 void setIO(str name = "") {
     cin.tie(0)->sync_with_stdio(0);
     if (!name.empty()) {
@@ -28,4 +23,16 @@ void setIO(str name = "") {
 int main() {
     setIO();
     
+    str s, t;
+    cin >> s >> t;
+
+    if (s == "sick" && t == "sick") {
+        cout << 1 << "\n";
+    } else if (s == "sick" && t == "fine") {
+        cout << 2 << "\n";
+    } else if (s == "fine" && t == "sick") {
+        cout << 3 << "\n";
+    } else if (s == "fine" && t == "fine") {
+        cout << 4 << "\n";
+    }
 }

@@ -12,11 +12,6 @@ using vi = vector<int>;
 #define range(i, a, b)  for (int i = a; i < (b); ++i)
 #define rep(i, n)       range(i, 0, n)
 
-#define pb push_back
-#define f first
-#define s second
-#define mp make_pair
-
 void setIO(str name = "") {
     cin.tie(0)->sync_with_stdio(0);
     if (!name.empty()) {
@@ -26,6 +21,30 @@ void setIO(str name = "") {
 }
 
 int main() {
-    setIO();
+    setIO("word");
     
+    int n, k;
+    cin >> n >> k;
+    str res;
+    int charInLine = 0;
+
+    while (n--) {
+        str word;
+        cin >> word;
+
+        if (len(word) + charInLine <= k) {
+            res.append(word);
+            res.append(" ");
+            charInLine += len(word);
+        } else {
+            res.pop_back();
+            res.append("\n");
+            charInLine = len(word);
+            res.append(word);
+            res.append(" ");
+        }
+
+    }
+    res.pop_back();
+    cout << res;
 }
