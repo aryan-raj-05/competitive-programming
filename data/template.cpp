@@ -17,15 +17,8 @@ using vi = vector<int>;
 #define s second
 #define mp make_pair
 
-void setIO(str name = "") {
-    cin.tie(0)->sync_with_stdio(0);
-    if (!name.empty()) {
-        freopen((name + ".in").c_str(), "r", stdin);
-        freopen((name + ".out").c_str(), "w", stdout);
-    }
-}
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 int main() {
-    setIO();
     
 }
