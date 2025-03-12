@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+#include <vector>
 using namespace std;
 
 using ll = long long;
@@ -28,5 +29,34 @@ void setIO(str name = "") {
 }
 
 int main() {
-    
+	// setIO("cowsignal");
+
+	// inputs
+    int m, n, k;
+    cin >> m >> n >> k;
+
+    vector<vector<char>> sign(m, vector<char>(n));
+    rep(i, m) {
+    	rep(j, n) {
+    		cin >> sign[i][j];
+    	}
+    }
+
+    // enlarge
+    vector<vector<char>> res;
+    iter(row, sign) {
+    	vector<char> item;
+    	iter(ch, row) {
+    		rep(_, k)	item.pb(ch);
+    	}
+    	rep(_, k)	res.pb(item);
+    }
+
+    // print
+    iter(row, res) {
+    	iter(ch, row) {
+    		cout << ch;
+    	}
+    	cout << '\n';
+    }
 }

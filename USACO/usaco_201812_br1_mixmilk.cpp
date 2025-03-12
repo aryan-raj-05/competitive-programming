@@ -27,6 +27,32 @@ void setIO(str name = "") {
 	}
 }
 
+#define nxt(i) ((i + 1) % 3)
+
 int main() {
-    
+ 	// setIO("mixmilk");
+
+ 	vector<ll> cap(3);
+ 	vector<ll> milk(3);
+ 	rep(i, 3) {
+ 		cin >> cap[i] >> milk[i];
+ 	}
+
+ 	int cur = 0, next = 1;
+ 	
+ 	rep(i, 100) {
+ 		ll newVal = milk.at(cur) + milk.at(next);
+ 		if (newVal <= cap.at(next)) {
+ 			milk.at(next) = newVal;
+ 			milk.at(cur) = 0;
+ 		} else {
+ 			milk.at(next) = cap.at(next);
+ 			milk.at(cur) = newVal - cap.at(next);
+ 		}
+ 		cur = next;
+ 		next = nxt(next);
+ 	}
+
+ 	iter(x, milk) 
+ 		cout << x << '\n';
 }

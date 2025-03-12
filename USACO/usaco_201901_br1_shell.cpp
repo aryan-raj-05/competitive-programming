@@ -27,6 +27,30 @@ void setIO(str name = "") {
 	}
 }
 
+void change(int *pos, int a, int b) {
+	if (*pos == a) 		*pos = b;
+	else if (*pos == b) *pos = a;
+	else 				return;
+}
+
 int main() {
-    
+    // setIO("shell");
+    int n;
+    cin >> n;
+
+    int sca = 0, scb = 0, scc = 0;
+    int posa = 1, posb = 2, posc = 3;
+    while (n--) {
+    	int a, b, g;
+    	cin >> a >> b >> g;
+    	change(&posa, a, b);
+    	change(&posb, a, b);
+    	change(&posc, a, b);
+
+    	if (g == posa)		sca++;
+    	else if (g == posb)	scb++;
+    	else if (g == posc)	scc++;
+    }
+
+    cout << max({sca, scb, scc}) << '\n';
 }

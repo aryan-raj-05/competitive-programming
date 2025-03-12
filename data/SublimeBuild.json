@@ -5,12 +5,12 @@
         "-std=c++17",
         "-Wall",
         "-Wextra",
-        "-pedantic",     // may become bit annoying
+        "-pedantic",     
         "-O2",
         "-Wshadow",
         "-Wformat=2",
-        "-Wfloat-equal", // can become annoying if working with floats
-        "-Wconversion",  // might generate lots of warnings for implicit conversions
+        "-Wfloat-equal", 
+        "-Wconversion",  
         "-Wlogical-op",
         "-Wshift-overflow=2",
         "-Wduplicated-cond",
@@ -32,8 +32,4 @@
     "file_regex": "^(.*):([0-9]+):([0-9]+): error: (.*)$",
     "working_dir": "$file_path",
     "selector": "source.c++",
-
-    // Note : don't change from C++17
-    // that's the standard with which I've precompiled
-    // the bits/stdc++.h file
 }
