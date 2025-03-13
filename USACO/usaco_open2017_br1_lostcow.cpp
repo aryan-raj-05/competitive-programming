@@ -28,5 +28,24 @@ void setIO(str name = "") {
 }
 
 int main() {
-    
+    // setIO("lostcow");
+    int x, y;
+    cin >> x >> y;
+
+    int prev = x, cur = x, dist = 0, step = 1;
+    while (1) {
+    	cur = x + step;
+    	step *= (-2);
+
+    	if ((y >= min(prev, cur)) && (y <= max(prev, cur))) {
+    		dist += abs(y - prev);
+    		break;
+    	} else {
+    		dist += abs(cur - prev);
+    	}
+
+    	prev = cur;
+    }
+
+    cout << dist << '\n';
 }

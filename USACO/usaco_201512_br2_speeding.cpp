@@ -28,11 +28,35 @@ void setIO(str name = "") {
 }
 
 int main() {
-    // setIO("speeding");
+    setIO("speeding");
 
     int n, m;
     cin >> n >> m;
 
-    vector<int> overSpeedLimit;
-    
+    vi limit(100), bessie(100);
+
+    // for speed limits
+    int pos = 0, length, speed;
+    rep(i, n) {
+    	cin >> length >> speed;
+    	range(j, pos, pos + length)
+    		limit[j] = speed;
+    	pos += length;
+    }
+
+    // for bessie
+    pos = 0;
+    rep(i, m) {
+    	cin >> length >> speed;
+    	range(j, pos, pos + length)
+    		bessie[j] = speed;
+    	pos += length;
+    }
+
+    // calulation of over the limits
+    int maxOverLimit = 0;
+    rep(i, 100) {
+    	maxOverLimit = max(maxOverLimit, bessie[i] - limit[i]);
+    }
+    cout << maxOverLimit << '\n';
 }

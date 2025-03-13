@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 
 using ll = long long;
@@ -28,5 +28,26 @@ void setIO(str name = "") {
 }
 
 int main() {
-    
+    // setIO("shuffle");
+
+	int n;
+	cin >> n;
+
+	vi sh(n), pos(n), temp(n);
+
+	rep(i, n) {
+		cin >> sh[i];
+		sh[i]--;
+	}
+
+	rep(i, n) pos[i] = i;
+
+	rep(_, 3) {
+		rep(i, n)	temp[sh[i]] = pos[i];
+		swap(pos, temp);
+	}
+
+	rep(i, n) 	cin >> sh[i];
+	rep(i, n) 	temp[pos[i]] = sh[i];
+	rep(i, n)	cout << temp[i] << '\n';
 }
