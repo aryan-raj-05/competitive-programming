@@ -5,12 +5,12 @@
         "-std=c++17",
         "-Wall",
         "-Wextra",
-        "-pedantic",     
+        "-pedantic",
         "-O2",
         "-Wshadow",
         "-Wformat=2",
-        "-Wfloat-equal", 
-        "-Wconversion",  
+        "-Wfloat-equal",
+        "-Wconversion",
         "-Wlogical-op",
         "-Wshift-overflow=2",
         "-Wduplicated-cond",
@@ -24,12 +24,12 @@
         "&&",
         "a.exe",
         "<",
-        "D:\\Coding\\Competitive-Programming\\data\\input.txt",
+        "D:\\Coding\\coding-journal\\data\\input.txt",
         ">",
-        "D:\\Coding\\Competitive-Programming\\data\\output.txt"
+        "D:\\Coding\\coding-journal\\data\\output.txt"
     ],
     "shell": true,
     "file_regex": "^(.*):([0-9]+):([0-9]+): error: (.*)$",
     "working_dir": "$file_path",
-    "selector": "source.c++",
+    "selector": "source.c++"
 }
