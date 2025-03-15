@@ -1,5 +1,5 @@
 #include <iostream>
-#include "common/ListNode.cpp"
+#include "ListNode.cpp"
 
 using namespace std;
 
