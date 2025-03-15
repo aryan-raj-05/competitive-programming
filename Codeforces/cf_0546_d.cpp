@@ -87,8 +87,6 @@ namespace sol2 {
 }
 
 int main() {
-    FAST
-
     sol2::sieve();
 
     int n;
