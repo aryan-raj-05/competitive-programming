@@ -1,5 +1,25 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
+using namespace chrono;
+
+#ifndef ONLINE_JUDGE
+
+#include "../data/debugging.h"
+#define print(x) cout << #x << " = " << x << '\n'
+#define CLOCK auto start = high_resolution_clock::now();
+#define STOP  auto end = high_resolution_clock::now(); \
+    		  cerr << "\nExecution Time: " \
+    			   << duration_cast<microseconds>(end-start).count() \
+    		 	   << " microseconds\n";
+
+#else
+
+#define dbg(x)
+#define cdbg(x)
+#define CLOCK
+#define STOP
+
+#endif
 
 using ll = long long;
 using pii = pair<int,int>;
@@ -14,19 +34,17 @@ using vi = vector<int>;
 
 #define mp make_pair
 #define pb push_back
-#define f first
-#define s second
-#define pf printf
-#define sf scanf
+#define ff first
+#define ss second
 
-void setIO(str name = "") {
+void setIO(string name = "") {
 	cin.tie(0)->sync_with_stdio(0); 
-	if (len(name)) {
+	if (!name.empty()) {
 		freopen((name + ".in").c_str(), "r", stdin); 
 		freopen((name + ".out").c_str(), "w", stdout);
 	}
 }
 
 int main() {
-    
+
 }
