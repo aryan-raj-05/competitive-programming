@@ -25,6 +25,34 @@ void setIO(string name = "") {
 	}
 }
 
-int main() {
+vi countFreq(str s) {
+	vi freq(26, 0);
+	for(char c : s)
+		freq[c - 'a']++;
+	return freq;
+}
 
+int main() {
+	setIO("blocks");
+
+	int n;
+	cin >> n;
+
+	vector<pair<str, str>> words(n);
+	for(auto &[w1, w2] : words)
+		cin >> w1 >> w2;
+
+	vi maxBlocks(26, 0);
+	for(const auto &[w1, w2] : words) {
+		cerr << "Are we stuck\n";
+		vi freq1 = countFreq(w1);
+		vi freq2 = countFreq(w2);
+		rep(c, 26) {
+			maxBlocks[c] += max(freq1[c], freq2[c]);
+		}
+	}
+
+	rep(i, 26) {
+		cout << maxBlocks[i] << '\n';
+	}
 }
