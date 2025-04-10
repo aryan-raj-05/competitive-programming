@@ -16,6 +16,7 @@
         "-Wduplicated-cond",
         "-Wcast-qual",
         "-Wcast-align",
+        "-Winvalid-pch",
         "-D_FORTIFY_SOURCE=2",
         "-fstack-protector",
         "$file",
