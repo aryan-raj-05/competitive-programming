@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#ifndef ONLINE_JUDGE
+#include "../data/debugging.h"
+#define log(x) cout << #x << " = " << x << '\n'
+#else
+#define log(x)
+#endif
+
 using ll = long long;
 using pii = pair<int,int>;
 using str = string;
