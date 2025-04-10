@@ -33,3 +33,5 @@
 
 # All text files used for testing
 *.txt
+*.in
+*.out
