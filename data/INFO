@@ -1,0 +1,9 @@
+# aliases used for competitive programming
+
+alias gpp='g++ -std=c++17 -O2 -Wall -Wextra -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Winvalid-pch -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector'
+
+alias run='./a.out < ~/1-repos/coding-journal/in.txt'
+
+clock() {
+  /usr/bin/time -v ./a.out < ~/1-repos/coding-journal/in.txt
+}
