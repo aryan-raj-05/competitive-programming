@@ -1,9 +1,6 @@
 *.exe
 *.out
 *.class
-
 *.txt
 *.in
-*.out
-
 .vscode/
