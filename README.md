@@ -1,4 +1,4 @@
-# Competitve Programming Practice
+# Competitive Programming Practice
 
 This repository is a collection of problems I’ve solved while practicing competitive programming on various platforms (Codeforces, AtCoder, USACO, etc.).
 
