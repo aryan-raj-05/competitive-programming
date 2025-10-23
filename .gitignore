@@ -4,3 +4,4 @@
 *.txt
 *.in
 .vscode/
+output/
